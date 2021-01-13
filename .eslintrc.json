@@ -31,7 +31,7 @@
     "space-before-function-paren": "off",
     "react/prop-types": "off",
     "no-use-before-define": "off",
-    "no-empty-interface": "false",
+    "@typescript-eslint/no-empty-interface": "off", 
     "@typescript-eslint/no-use-before-define": ["error"]
 
   }

@@ -1,5 +1,5 @@
 import React from 'react'
 
-export const Home = (): JSX.Element => {
-  return <h1>My page</h1>
+export default function Home (): JSX.Element {
+  return <h1>Sistema de Login</h1>
 }

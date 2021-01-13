@@ -1,15 +1,14 @@
 const theme = {
   colors: {
-    background: '#fff',
-    texts: '#222',
-    textsHover: '#fff',
-    textAsset: '#eee',
-    firstCard: '#fff0de',
-    secondCard: '#e9edce',
-    thirdColor: '#fddadc',
+    background: '#F2F6FF',
+    border: '#F2F6FF',
     white: '#fff',
     black: '#222',
-    bottom: '#fffdb8'
+    primaryColor: '#267FFF',
+    LightprimaryColor: '#76aefc',
+    secondaryColor: '#F2F6FF',
+    primaryTextColor: '#30507D',
+    secondaryTextColor: '#414141'
   }
 }
 

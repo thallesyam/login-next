@@ -67,6 +67,16 @@ export default createGlobalStyle`
     height: auto;
   }
 
-
+  body {
+    --background: ${props => props.theme.colors.background};
+    --border: ${props => props.theme.colors.border};
+    --white: ${props => props.theme.colors.white};
+    --black: ${props => props.theme.colors.black};
+    --primaryColor: ${props => props.theme.colors.primaryColor};
+    --lightprimaryColor: ${props => props.theme.colors.LightprimaryColor};
+    --secondaryColor: ${props => props.theme.colors.secondaryColor};
+    --primaryTextColor: ${props => props.theme.colors.primaryTextColor};
+    --secondaryTextColor: ${props => props.theme.colors.secondaryTextColor};
+  }
 
 `
