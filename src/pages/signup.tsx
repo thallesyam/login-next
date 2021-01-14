@@ -45,7 +45,7 @@ const SignIn = (): JSX.Element => {
       if (resp.status === 401) {
         setErrorEmail(true)
       } else {
-        setMessage('Conta feita com sucesso')
+        setMessage('Conta criada com sucesso')
         setErrorPassword(false)
         setErrorEmail(false)
         setSucces(true)
@@ -71,6 +71,7 @@ const SignIn = (): JSX.Element => {
               type="name"
               placeholder="Nome Completo"
               ref={nameRef}
+              required
             />
           </div>
           <div>
@@ -79,6 +80,7 @@ const SignIn = (): JSX.Element => {
               type="name"
               placeholder="Email"
               ref={emailRef}
+              required
             />
           </div>
           <div>
@@ -87,6 +89,7 @@ const SignIn = (): JSX.Element => {
               type="password"
               placeholder="Password"
               ref={passwordRef}
+              required
             />
           </div>
           <div>
@@ -95,6 +98,7 @@ const SignIn = (): JSX.Element => {
               name="confirmPassword"
               type="password"
               placeholder="Confirm Password"
+              required
             />
           </div>
           <div>
@@ -106,6 +110,7 @@ const SignIn = (): JSX.Element => {
         {errorPassword && <ErrorMsg>Erro as senhas não coincidem</ErrorMsg>}
         {errorEmail && <ErrorMsg>Erro esse email já existe</ErrorMsg>}
         {succes && <SuccesMsg>{message}</SuccesMsg>}
+
         <p>ou entre com</p>
         <Link href="/">
           <a>

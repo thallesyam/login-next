@@ -23,7 +23,7 @@ export default authenticated(async function getPeople(
   try {
     const { db } = await connectToDatabase()
     const people = await db.collection('login-app').find({}).toArray()
-    res.json(req)
+    console.log(req.statusCode)
     res.json(people)
   } catch (error) {
     console.log(error)

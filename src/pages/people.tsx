@@ -8,18 +8,19 @@ export default function People({ people }: any): JSX.Element {
     <>
       <h1>Hello people {JSON.stringify(people)}</h1>
 
+      <br />
       <Link href="/signin">
         <a>Sign in</a>
       </Link>
       <br />
       <Link href="/signup">
         <a>Sign in</a>
-        <br />
       </Link>
+      <br />
       <Link href="/">
         <a>Home</a>
-        <br />
       </Link>
+      <br />
     </>
   )
 }

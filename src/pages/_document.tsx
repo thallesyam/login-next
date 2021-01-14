@@ -37,7 +37,7 @@ export default class MyDocument extends Document {
 
   render(): JSX.Element {
     return (
-      <Html lang="py">
+      <Html lang="pt">
         <Head>
           <meta charSet="utf-8" />
 

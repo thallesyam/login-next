@@ -9,12 +9,11 @@ export default function Home(): JSX.Element {
       </Link>
       <br />
       <Link href="/signup">
-        <a>Sign in</a>
-        <br />
+        <a>Sign up</a>
       </Link>
+      <br />
       <Link href="/people">
         <a>People</a>
-        <br />
       </Link>
     </>
   )

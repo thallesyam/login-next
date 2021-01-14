@@ -67,6 +67,7 @@ const SignIn = (): JSX.Element => {
               type="name"
               placeholder="Email"
               ref={emailRef}
+              required
             />
           </div>
           <div>
@@ -75,6 +76,7 @@ const SignIn = (): JSX.Element => {
               type="password"
               placeholder="Password"
               ref={passwordRef}
+              required
             />
           </div>
           <div>
