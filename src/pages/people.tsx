@@ -5,8 +5,6 @@ import Link from 'next/link'
 import { Container } from '../styles/pages/People'
 
 export default function People({ people }: any): JSX.Element {
-  console.log(people)
-
   return (
     <>
       <Container>
