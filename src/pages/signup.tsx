@@ -45,8 +45,7 @@ const SignIn = (): JSX.Element => {
       if (resp.status === 401) {
         setErrorEmail(true)
       } else {
-        const json = await resp.json()
-        setMessage(json)
+        setMessage('Conta feita com sucesso')
         setErrorPassword(false)
         setErrorEmail(false)
         setSucces(true)
@@ -106,7 +105,7 @@ const SignIn = (): JSX.Element => {
         </form>
         {errorPassword && <ErrorMsg>Erro as senhas não coincidem</ErrorMsg>}
         {errorEmail && <ErrorMsg>Erro esse email já existe</ErrorMsg>}
-        {succes && <SuccesMsg>Conta criada com sucesso</SuccesMsg>}
+        {succes && <SuccesMsg>{message}</SuccesMsg>}
         <p>ou entre com</p>
         <Link href="/">
           <a>
