@@ -27,7 +27,7 @@ export async function redirectGet(
 
   if (resp.status === 401 && ctx.req) {
     ctx.res?.writeHead(302, {
-      Location: '/signin'
+      Location: 'https://login-next.vercel.app/signin'
     })
     ctx.res?.end()
   }

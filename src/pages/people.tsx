@@ -26,6 +26,9 @@ export default function People({ people }: any): JSX.Element {
 }
 
 People.getInitialProps = async (ctx: NextPageContext) => {
-  const json = await redirectGet('/api/people', ctx)
+  const json = await redirectGet(
+    'https://login-next.vercel.app/api/people',
+    ctx
+  )
   return { people: json }
 }

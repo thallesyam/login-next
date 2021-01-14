@@ -25,7 +25,7 @@ const SignIn = (): JSX.Element => {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) {
     e.preventDefault()
-    const resp = await fetch('/api/signin', {
+    const resp = await fetch('https://login-next.vercel.app/api/signin', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -30,7 +30,7 @@ const SignIn = (): JSX.Element => {
     e.preventDefault()
 
     if (passwordRef.current?.value === confirmPassowordRef.current?.value) {
-      const resp = await fetch('/api/signup', {
+      const resp = await fetch('https://login-next.vercel.app/api/signup', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
