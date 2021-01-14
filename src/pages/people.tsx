@@ -5,13 +5,9 @@ import Link from 'next/link'
 import { Container } from '../styles/pages/People'
 
 export default function People({ people }: any): JSX.Element {
-  const [auth, setAuth] = useState<boolean>()
+  const [auth, setAuth] = useState<boolean>(false)
 
-  if (people.status === 401) {
-    setAuth(false)
-  } else {
-    setAuth(true)
-  }
+  console.log(people)
 
   return (
     <>

@@ -27,6 +27,6 @@ export default authenticated(async function getPeople(
     res.json(people)
   } catch (error) {
     console.log(error)
-    return res.send(500)
+    return res.send(401)
   }
 })
