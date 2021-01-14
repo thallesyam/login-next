@@ -5,10 +5,12 @@ import Link from 'next/link'
 import { Container } from '../styles/pages/People'
 
 export default function People({ people }: any): JSX.Element {
+  console.log(JSON.stringify(people))
   return (
     <>
       <Container>
         <h1>Página Privada</h1>
+        <p>Você está autenticado</p>
         <Link href="/signin">
           <a>Sign in</a>
         </Link>
