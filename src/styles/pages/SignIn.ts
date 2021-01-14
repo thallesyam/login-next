@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { FiX } from 'react-icons/fi'
+import { FiArrowLeft } from 'react-icons/fi'
 import { FcGoogle } from 'react-icons/fc'
 
 export const Container = styled.section`
@@ -144,7 +144,7 @@ export const FormContainer = styled.section`
   }
 `
 
-export const CloseIcon = styled(FiX)`
+export const LeftIcon = styled(FiArrowLeft)`
   color: var(--primaryColor);
 
   font-size: 32px;

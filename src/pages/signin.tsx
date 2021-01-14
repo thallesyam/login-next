@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react'
 import {
   Container,
   FormContainer,
-  CloseIcon,
+  LeftIcon,
   GoogleIcon,
   SuccesMsg,
   ErrorMsg
@@ -58,7 +58,11 @@ const SignIn = (): JSX.Element => {
       <FormContainer>
         <section>
           <h3>Sign In</h3>
-          <CloseIcon />
+          <Link href="/">
+            <a>
+              <LeftIcon />
+            </a>
+          </Link>
         </section>
         <form>
           <div>
