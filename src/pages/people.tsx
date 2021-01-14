@@ -7,6 +7,7 @@ import { Container } from '../styles/pages/People'
 export default function People({ people }: any): JSX.Element {
   const [auth, setAuth] = useState<boolean>(false)
 
+  setAuth(false)
   console.log(people)
 
   return (
