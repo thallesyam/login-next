@@ -26,6 +26,6 @@ export default function People({ people }: any): JSX.Element {
 }
 
 People.getInitialProps = async (ctx: NextPageContext) => {
-  const json = await redirectGet('http://localhost:3000/api/people', ctx)
+  const json = await redirectGet('/api/people', ctx)
   return { people: json }
 }
