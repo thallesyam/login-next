@@ -161,3 +161,14 @@ export const GoogleIcon = styled(FcGoogle)`
   font-size: 15px;
   margin-right: 10px;
 `
+export const SuccesMsg = styled.span`
+  font-size: 16px;
+  margin: 15px 0;
+  color: #00c851;
+`
+
+export const ErrorMsg = styled.span`
+  font-size: 16px;
+  margin: 15px 0;
+  color: #ff4444;
+`

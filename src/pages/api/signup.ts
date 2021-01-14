@@ -14,17 +14,23 @@ export default async function Register(
       hash(req.body.password, 10, async function (err, hash) {
         if (!err && hash) {
           const { name, email } = req.body
+          const ifExist = await db.collection('login-app').findOne({ email })
 
-          const data = {
-            name,
-            email,
-            password: hash
+          if (ifExist) {
+            return res.status(401).json({ message: 'Email exist' })
           }
 
-          db.collection('login-app').insertOne(data)
+          if (!ifExist) {
+            const data = {
+              name,
+              email,
+              password: hash
+            }
 
-          const persons = await db.collection('login-app').find({}).toArray()
-          return res.json(persons)
+            db.collection('login-app').insertOne(data)
+            const persons = await db.collection('login-app').find({}).toArray()
+            return res.json(persons)
+          }
         }
       })
     } else {
