@@ -1,28 +1,22 @@
-# TypeScript & Styled Components Next.js example
+# Sistema de Login 
 
-This is a really simple project that show the usage of Next.js with TypeScript and Styled Components.
+Sign in e Sign up utilizando a stack javascript, e algumas ferramentas externas
+Nesse sistema o usuario ao logar recebe um jwt que é setado como cookie, e isso libera o acesso as rotas privadas do sistema
+O Sistema conta com tratativas de erros e interações visuais que mostram em que momento da aplicação o usuario está
 
-## Deploy your own
+# Ferramentas
 
-Deploy the example using [Vercel](https://vercel.com):
+- Next JS (React JS + Node JS)
+- Mongo DB
+- Styled Components
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-typescript-styled-components&project-name=with-typescript-styled-components&repository-name=with-typescript-styled-components)
+# Como utilizar
 
-## How to use it?
+- Rodar um `git clone`
+- `yarn init` ou `npm init`
+- `yarn dev`
+- Adicionar também as variaveis ambientes do MONGO para poder utilizar do sistema
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+# Aplicação em produção
 
-```bash
-npx create-next-app --example with-typescript-styled-components with-typescript-styled-components
-# or
-yarn create next-app --example with-typescript-styled-components with-typescript-styled-components
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-## Notes
-
-This is an amalgamation of the 2 existing examples:
-
-- [with-typescript](https://github.com/vercel/next.js/tree/canary/examples/with-typescript)
-- [with-styled-components](https://github.com/vercel/next.js/tree/canary/examples/with-styled-components)
+https://login-next.vercel.app/
